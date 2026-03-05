@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --primary: #8BA358;
+  /* Olive Green */
+  --primary-light: #94B056;
+  --secondary: #8B2734;
+  /* Deep Maroon */
+  --accent: #F39C12;
+  /* Logo Orange */
+  --bg-organic: #FBFBFA;
+  --text-main: #1A1A1A;
+  --text-muted: #666666;
+  --white: #ffffff;
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --brand-gradient: linear-gradient(135deg, #7C9744 0%, #8B2734 100%);
+  --transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--bg-organic);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: 'Outfit', sans-serif;
+  transition: var(--transition);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+}
+
+/* Custom Utilities */
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.btn-primary {
+  background: var(--brand-gradient);
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(124, 151, 68, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 39, 52, 0.4);
+  filter: brightness(1.1);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 10px 26px;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
