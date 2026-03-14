@@ -22,6 +22,30 @@ function App() {
     if (showComingSoon) {
       window.scrollTo(0, 0);
     }
+
+    // Auto-scroll logic for new launches
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('launch') === 'true') {
+      setTimeout(() => {
+        // Scroll to bottom
+        window.scrollTo({
+          top: document.documentElement.scrollHeight,
+          behavior: 'smooth'
+        });
+
+        // After reaching bottom, scroll back to top
+        setTimeout(() => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+          
+          // Clean up URL parameter to avoid re-triggering
+          const newUrl = window.location.pathname;
+          window.history.replaceState({}, document.title, newUrl);
+        }, 3000); // Give it 3 seconds to stay at the bottom
+      }, 1000); // Wait 1 second after load to start
+    }
   }, [showComingSoon]);
 
   const addToCart = (product) => {

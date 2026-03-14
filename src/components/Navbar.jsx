@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, MessageCircle, Languages } from 'lucide-react';
+import { Menu, X, Phone, MessageCircle, Languages, UserPlus } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import logo from '../assets/logo.png';
 
@@ -57,13 +57,15 @@ const Navbar = ({ onComingSoon }) => {
                         {lang === 'en' ? 'English' : 'ಕನ್ನಡ'}
                     </button>
 
-                    <button
-                        onClick={onComingSoon}
+                    <a
+                        href="www.nidhifreshbasket.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-primary text-white px-5 py-2 rounded-full font-semibold flex items-center gap-2 hover:bg-primary-light transition-all shadow-md active:scale-95"
                     >
-                        <Phone size={18} />
-                        {t('nav.comingSoon')}
-                    </button>
+                        <UserPlus size={18} />
+                        {t('nav.registerNow')}
+                    </a>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -113,16 +115,16 @@ const Navbar = ({ onComingSoon }) => {
                         {lang === 'en' ? 'English' : 'ಕನ್ನಡ'}
                     </button>
 
-                    <button
-                        onClick={(e) => {
-                            setMobileMenuOpen(false);
-                            onComingSoon(e);
-                        }}
+                    <a
+                        href="https://www.nidhifreshbasket.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={() => setMobileMenuOpen(false)}
                         className="btn-primary px-10 py-4 text-xl flex items-center gap-3"
                     >
-                        <MessageCircle size={22} />
-                        {t('nav.comingSoon')}
-                    </button>
+                        <UserPlus size={22} />
+                        {t('nav.registerNow')}
+                    </a>
                 </div>
             </div>
         </nav>

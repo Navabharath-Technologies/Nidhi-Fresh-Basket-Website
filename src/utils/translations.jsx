@@ -7,6 +7,7 @@ export const translations = {
             gallery: "Gallery",
             contact: "Contact",
             comingSoon: "Coming Soon",
+            registerNow: "Register Now",
             orderNow: "Order Now",
             orderWhatsApp: "Order on WhatsApp"
         },
@@ -286,6 +287,7 @@ export const translations = {
             gallery: "ಗ್ಯಾಲರಿ",
             contact: "ಸಂಪರ್ಕ",
             comingSoon: "ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ",
+            registerNow: "ಈಗಲೇ ನೋಂದಾಯಿಸಿ",
             orderNow: "ಈಗಲೇ ಆರ್ಡರ್ ಮಾಡಿ",
             orderWhatsApp: "ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಆರ್ಡರ್ ಮಾಡಿ"
         },
