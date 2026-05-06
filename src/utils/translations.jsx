@@ -6,7 +6,7 @@ export const translations = {
             dairy: "Dairy",
             gallery: "Gallery",
             contact: "Contact",
-            comingSoon: "Coming Soon",
+            comingSoon: "Launching Soon",
             registerNow: "Register Now",
             orderNow: "Order Now",
             orderWhatsApp: "Order on WhatsApp"
@@ -233,7 +233,7 @@ export const translations = {
         buttons: {
             addToBasket: "Add to Basket",
             add: "Add",
-            comingSoon: "Coming Soon",
+            comingSoon: "Launching Soon",
             chatWhatsApp: "Chat on WhatsApp",
             callNow: "Call Now",
             startShopping: "Start Shopping",
@@ -246,7 +246,7 @@ export const translations = {
             empty: "Your basket is empty",
             emptyDesc: "Add some fresh produce to get started!",
             total: "Total Price",
-            comingSoon: "Coming Soon",
+            comingSoon: "Launching Soon",
             preparing: "We are preparing our online delivery system. Thank you for your patience!"
         },
         howToOrder: {
